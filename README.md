@@ -7,7 +7,7 @@ La aplicación "To-Do" es un gestor de tareas simple que permite a los usuarios 
 Para ejecutar la aplicación utilizando Docker Compose, sigue estos pasos:
 
 ### 1. Clonar el Repositorio
-git clone https://github.com/repositorio-ficticio/app.git
+git clone https://github.com/adriangonzalezurjc/getting-started.git
 cd app
 
 ### 2. Construir y Ejecutar la Aplicación
