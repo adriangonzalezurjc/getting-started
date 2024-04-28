@@ -30,21 +30,23 @@ Durante el diseño de la aplicación, se han tenido en cuenta diversas considera
 ## Paso a Paso para Crear la Aplicación (S-SDLC)
 Para crear esta aplicación desde cero siguiendo el Secure Software Development Lifecycle (S-SDLC), se deberían seguir estos pasos:
 
- 1. Recopilación de Requisitos
+### 1. Recopilación de Requisitos
 Definir los Requisitos de la Aplicación:
 - Identificar y documentar las funcionalidades básicas, como agregar, eliminar y marcar tareas.
 - Establecer requisitos de rendimiento, seguridad y usabilidad.
 Análisis de Riesgos:
 - Identificar posibles amenazas y vulnerabilidades en la aplicación.
 - Realizar análisis de riesgos y establecer estrategias para mitigarlos.
-2. Diseño del Sistema
+  
+### 2. Diseño del Sistema
 Diseño de la Arquitectura:
 - Establecer la estructura de directorios, modelos de datos y rutas.
 - Definir la arquitectura de la aplicación, incluyendo el patrón MVC (Modelo-Vista-Controlador) u otro diseño adecuado.
 Medidas de Seguridad:
 - Implementar autenticación y autorización para controlar el acceso a las funcionalidades.
 - Encriptar datos sensibles y establecer medidas de protección contra ataques como XSS y CSRF.
-3. Implementación
+
+### 3. Implementación
 Configuración del Entorno de Desarrollo:
 - Instalar y configurar Node.js y Express.js para el desarrollo de la aplicación.
 - Configurar la base de datos, según las necesidades del proyecto.
@@ -54,7 +56,8 @@ Desarrollo de Funcionalidades:
 Seguridad en la Implementación:
 - Aplicar buenas prácticas de programación segura, como la validación de entrada de datos y la prevención de inyecciones SQL.
 - Implementar manejo adecuado de sesiones y tokens para la autenticación.
-4. Pruebas
+
+### 4. Pruebas
 Pruebas Unitarias:
 - Desarrollar pruebas unitarias para cada función y componente de la aplicación.
 - Verificar que cada función se comporte como se espera y maneje casos de borde.
@@ -64,14 +67,16 @@ Pruebas de Integración:
 Pruebas de Seguridad:
 - Realizar análisis estático de código para identificar posibles vulnerabilidades.
 - Ejecutar pruebas de penetración y análisis de vulnerabilidades para identificar y corregir posibles brechas de seguridad.
-5. Despliegue
+
+### 5. Despliegue
 Configuración del Entorno de Producción:
 - Configurar un entorno de producción seguro utilizando HTTPS y certificados SSL para proteger la comunicación.
 - Establecer medidas de seguridad adicionales, como cortafuegos y reglas de acceso.
 Despliegue de la Aplicación:
 - Empaquetar la aplicación en contenedores Docker para facilitar el despliegue y la portabilidad.
 - Utilizar Docker Compose para gestionar y orquestar los contenedores en el entorno de producción.
-6. Mantenimiento
+
+### 6. Mantenimiento
 Gestión de Versiones y Actualizaciones:
 - Mantener un control de versiones adecuado utilizando herramientas como Git para gestionar el código fuente.
 - Aplicar actualizaciones de seguridad y correcciones de errores de manera regular.
