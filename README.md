@@ -17,7 +17,7 @@ docker-compose up
 Esto construirá la imagen de la aplicación y lanzará el contenedor. Una vez que la aplicación esté en funcionamiento, se puede acceder a ella desde el navegador en http://localhost:8000
 
 
-##Consideraciones de Seguridad
+## Consideraciones de Seguridad
 Durante el diseño de la aplicación, se han tenido en cuenta diversas consideraciones de seguridad para proteger los datos de los usuarios y garantizar un funcionamiento seguro. Algunas de estas consideraciones incluyen:
 
 - Validación de entrada de datos para prevenir ataques de inyección.
@@ -27,7 +27,7 @@ Durante el diseño de la aplicación, se han tenido en cuenta diversas considera
 - Implementación de medidas de protección contra vulnerabilidades comunes.
 
 
-##Paso a Paso para Crear la Aplicación (S-SDLC)
+## Paso a Paso para Crear la Aplicación (S-SDLC)
 Para crear esta aplicación desde cero siguiendo el Secure Software Development Lifecycle (S-SDLC), se deberían seguir estos pasos:
 
  1. Recopilación de Requisitos
