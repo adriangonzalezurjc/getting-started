@@ -28,58 +28,72 @@ Durante el diseño de la aplicación, se han tenido en cuenta diversas considera
 
 
 ## Paso a Paso para Crear la Aplicación (S-SDLC)
-Para crear esta aplicación desde cero siguiendo el Secure Software Development Lifecycle (S-SDLC), se deberían seguir estos pasos:
+Para crear el proyecto del Juice Shop desplegado en Docker siguiendo el Secure Software Development Lifecycle (S-SDLC), se deben seguir los siguientes pasos:
 
 ### 1. Recopilación de Requisitos
-Definir los Requisitos de la Aplicación:
-- Identificar y documentar las funcionalidades básicas, como agregar, eliminar y marcar tareas.
-- Establecer requisitos de rendimiento, seguridad y usabilidad.
+
+Definición de los Requisitos de la Aplicación:
+- Identificar y documentar las funcionalidades esenciales de la aplicación, incluyendo la gestión de usuarios, la visualización de productos y el proceso de compra.
+- Establecer requisitos de rendimiento, seguridad y usabilidad para garantizar una experiencia óptima para el usuario.
+
 Análisis de Riesgos:
-- Identificar posibles amenazas y vulnerabilidades en la aplicación.
-- Realizar análisis de riesgos y establecer estrategias para mitigarlos.
-  
-### 2. Diseño del Sistema
+- Identificar posibles amenazas y vulnerabilidades asociadas con la aplicación.
+- Realizar un análisis de riesgos exhaustivo y desarrollar estrategias para mitigarlos.
+
+### 2.  Diseño del Sistema
+
 Diseño de la Arquitectura:
-- Establecer la estructura de directorios, modelos de datos y rutas.
-- Definir la arquitectura de la aplicación, incluyendo el patrón MVC (Modelo-Vista-Controlador) u otro diseño adecuado.
+- Establecer la estructura de directorios, modelos de datos y rutas necesarias para la aplicación.
+- Definir la arquitectura de la aplicación, incluyendo la elección de un patrón de diseño apropiado como MVC.
+
 Medidas de Seguridad:
-- Implementar autenticación y autorización para controlar el acceso a las funcionalidades.
-- Encriptar datos sensibles y establecer medidas de protección contra ataques como XSS y CSRF.
+- Implementar mecanismos de autenticación y autorización para controlar el acceso a las funcionalidades sensibles.
+- Encriptar datos sensibles y aplicar medidas de protección contra vulnerabilidades comunes como XSS y CSRF.
 
 ### 3. Implementación
+
 Configuración del Entorno de Desarrollo:
-- Instalar y configurar Node.js y Express.js para el desarrollo de la aplicación.
-- Configurar la base de datos, según las necesidades del proyecto.
+- Instalar y configurar las herramientas necesarias, como Node.js, Express.js y la base de datos correspondiente.
+- Configurar el entorno de desarrollo para facilitar el desarrollo y la depuración de la aplicación.
+
 Desarrollo de Funcionalidades:
-- Escribir scripts y controladores para las operaciones CRUD (Crear, Leer, Actualizar, Eliminar) de las tareas.
-- Implementar lógica de negocio para validar y procesar las tareas según los requisitos.
+- Escribir código para implementar las funcionalidades requeridas, como la gestión de usuarios, la navegación por el catálogo de productos y la finalización de pedidos.
+- Implementar controles de validación y manejo de errores para garantizar la integridad y seguridad de los datos.
+
 Seguridad en la Implementación:
-- Aplicar buenas prácticas de programación segura, como la validación de entrada de datos y la prevención de inyecciones SQL.
-- Implementar manejo adecuado de sesiones y tokens para la autenticación.
+-Aplicar prácticas de programación segura, como la sanitización de entradas y la prevención de vulnerabilidades de inyección.
 
 ### 4. Pruebas
+
 Pruebas Unitarias:
-- Desarrollar pruebas unitarias para cada función y componente de la aplicación.
-- Verificar que cada función se comporte como se espera y maneje casos de borde.
+- Desarrollar pruebas unitarias para cada componente de la aplicación, verificando su funcionamiento individual.
+- Garantizar que todas las funciones cumplan con los requisitos y manejen adecuadamente casos límite.
+
 Pruebas de Integración:
-- Ejecutar pruebas de integración para garantizar que los diferentes componentes funcionen correctamente juntos.
-- Verificar la comunicación entre las capas de la aplicación, como las rutas y la capa de persistencia.
+- Realizar pruebas de integración para asegurar la interoperabilidad entre los diferentes módulos de la aplicación.
+- Verificar que la comunicación entre el front-end y el back-end funcione correctamente.
+
 Pruebas de Seguridad:
-- Realizar análisis estático de código para identificar posibles vulnerabilidades.
-- Ejecutar pruebas de penetración y análisis de vulnerabilidades para identificar y corregir posibles brechas de seguridad.
+- Ejecutar pruebas de seguridad, como análisis estático de código y pruebas de penetración, para identificar y corregir posibles vulnerabilidades.
 
 ### 5. Despliegue
+
 Configuración del Entorno de Producción:
-- Configurar un entorno de producción seguro utilizando HTTPS y certificados SSL para proteger la comunicación.
-- Establecer medidas de seguridad adicionales, como cortafuegos y reglas de acceso.
+
+- Configurar un entorno de producción seguro, utilizando protocolos de comunicación cifrados como HTTPS y certificados SSL.
+- Implementar medidas de seguridad adicionales, como firewalls y restricciones de acceso.
+
 Despliegue de la Aplicación:
-- Empaquetar la aplicación en contenedores Docker para facilitar el despliegue y la portabilidad.
-- Utilizar Docker Compose para gestionar y orquestar los contenedores en el entorno de producción.
+- Empaquetar la aplicación en contenedores Docker para facilitar su despliegue y escalabilidad.
+- Utilizar herramientas como Docker Compose para gestionar y orquestar los contenedores en el entorno de producción.
 
 ### 6. Mantenimiento
+
 Gestión de Versiones y Actualizaciones:
-- Mantener un control de versiones adecuado utilizando herramientas como Git para gestionar el código fuente.
-- Aplicar actualizaciones de seguridad y correcciones de errores de manera regular.
+- Mantener un control de versiones utilizando sistemas de control de versiones como Git.
+- Aplicar actualizaciones y correcciones de seguridad de manera regular para mantener la aplicación protegida contra las últimas amenazas.
+
 Monitorización y Registro:
-- Implementar herramientas de monitoreo para supervisar el rendimiento y la disponibilidad de la aplicación en producción.
-- Configurar registros para registrar eventos y alertas de posibles problemas o actividades sospechosas.
+- Implementar sistemas de monitorización para supervisar el rendimiento y la disponibilidad de la aplicación en tiempo real.
+- Configurar registros detallados para registrar eventos y alertas, facilitando la detección temprana de problemas y actividades sospechosas.
+
